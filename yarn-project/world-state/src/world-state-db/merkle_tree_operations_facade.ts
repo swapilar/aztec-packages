@@ -1,15 +1,10 @@
 import { Fr } from '@aztec/foundation/fields';
-import { LowLeafWitnessData } from '@aztec/merkle-tree';
+import { LeafData, LowLeafWitnessData } from '@aztec/merkle-tree';
 import { L2Block, MerkleTreeId, SiblingPath } from '@aztec/types';
 
-import {
-  CurrentTreeRoots,
-  HandleL2BlockResult,
-  LeafData,
-  MerkleTreeDb,
-  MerkleTreeOperations,
-  TreeInfo,
-} from '../index.js';
+import { MerkleTreeDb } from './merkle_tree_db.js';
+import { MerkleTreeOperations } from './merkle_tree_db_operations.js';
+import { CurrentTreeRoots, HandleL2BlockResult, TreeInfo } from './types.js';
 
 /**
  * Wraps a MerkleTreeDbOperations to call all functions with a preset includeUncommitted flag.

@@ -6,8 +6,8 @@ import { L2BlockHandledStats } from '@aztec/types/stats';
 
 import { LevelUp } from 'levelup';
 
-import { HandleL2BlockResult, MerkleTreeOperations, MerkleTrees } from '../index.js';
-import { MerkleTreeOperationsFacade } from '../merkle-tree/merkle_tree_operations_facade.js';
+import { HandleL2BlockResult, MerkleTreeOperations, MerkleTrees } from '../world-state-db/index.js';
+import { MerkleTreeOperationsFacade } from '../world-state-db/merkle_tree_operations_facade.js';
 import { WorldStateConfig } from './config.js';
 import { WorldStateRunningState, WorldStateStatus, WorldStateSynchronizer } from './world_state_synchronizer.js';
 

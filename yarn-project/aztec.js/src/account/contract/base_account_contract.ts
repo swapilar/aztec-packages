@@ -3,7 +3,7 @@ import { CompleteAddress, NodeInfo } from '@aztec/types';
 
 import { DefaultAccountInterface } from '../defaults/default_interface.js';
 import { AccountInterface, AuthWitnessProvider } from '../interface.js';
-import { AccountContract } from './index.js';
+import { AccountContract } from './account_contract.js';
 
 /**
  * Base class for implementing an account contract. Requires that the account uses the

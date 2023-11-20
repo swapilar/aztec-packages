@@ -30,17 +30,10 @@ import { L2Block, MerkleTreeId, SiblingPath } from '@aztec/types';
 
 import { default as levelup } from 'levelup';
 
-import { MerkleTreeOperationsFacade } from '../merkle-tree/merkle_tree_operations_facade.js';
-import {
-  CurrentTreeRoots,
-  HandleL2BlockResult,
-  INITIAL_NULLIFIER_TREE_SIZE,
-  IndexedTreeId,
-  MerkleTreeDb,
-  MerkleTreeOperations,
-  PublicTreeId,
-  TreeInfo,
-} from './merkle_tree_db.js';
+import { MerkleTreeDb } from './merkle_tree_db.js';
+import { INITIAL_NULLIFIER_TREE_SIZE, MerkleTreeOperations } from './merkle_tree_db_operations.js';
+import { MerkleTreeOperationsFacade } from './merkle_tree_operations_facade.js';
+import { CurrentTreeRoots, HandleL2BlockResult, IndexedTreeId, PublicTreeId, TreeInfo } from './types.js';
 
 /**
  * Data necessary to reinitialize the merkle trees from Db.
