@@ -4,23 +4,21 @@ title: Overview
 
 import ReactPlayer from "react-player/youtube";
 
-Aztec is an L2 that brings programmable privacy to Ethereum.
+Aztec is introduced as a Layer 2 solution bringing programmable privacy to Ethereum.
 
 ## Private Smart Contracts on Aztec
 
-A smart contract on Aztec is a collection of functions, written as ZK-SNARK circuits. These circuits can have different modes of execution:
+In Aztec, a smart contract is a collection of functions expressed as ZK-SNARK circuits. These circuits enable different modes of execution:
 
-1. Secret Functions -- can read and write private state, read historic public state, consume or send messages to / from Ethereum, and read Ethereum state. They can call other secret functions in the same contract, or other contracts, and can call public functions.
-2. Public Functions -- can read and write public state, write private state, consume or send messages to / from Ethereum and read Ethereum state. They can call other public functions on the same or other contracts.
-3. Portal Contracts -- these are contracts on Ethereum that can receive messages from Aztec or send messages to Aztec from Ethereum contracts.
+- **Secret Functions:** Reading and writing private state, reading historic public state, interacting with Ethereum (sending/receiving messages), and reading Ethereum state. They can invoke other secret or public functions.
+- **Public Functions:** Reading and writing public state, writing private state, interacting with Ethereum, and reading Ethereum state. They can invoke other public functions.
+- **Portal Contracts:** Contracts on Ethereum that receive messages from Aztec or send messages to Aztec from Ethereum contracts.
 
-Using these different modes of execution, developers can build applications with user privacy, data privacy and code privacy.
+### **Privacy in Different Aspects: User, Data, and Code**
 
-User privacy -- transactions may not reveal information about the sender or the recipient.
-
-Data privacy -- transactions may not reveal information about the payload of the transaction, e.g., the asset or value being transacted.
-
-Code privacy -- transactions may not reveal the program logic.
+- **User Privacy:** Transactions don't reveal information about the sender or recipient.
+- **Data Privacy:** Transactions don't reveal information about the transaction payload, such as the asset or value transacted.
+- **Code Privacy:** Transactions don't reveal program logic.
 
 Watch Zac, CEO of Aztec, describe our approach to building a privacy preserving smart contract blockchain.
 
@@ -42,25 +40,18 @@ You can watch Mike, Aztec PM, talk about public-private composablity in Aztec at
   url="https://www.youtube.com/watch?v=7Oc0tjdbi70&t=17723s"
 />
 
-## How Aztec is being built
+### **Aztec Development: Credibility, Decentralization, and Community**
 
-Aztec is being built and launched as a credibly neutral, decentralized network. The protocol is being developed as open source software by Aztec (the company) and our community. Together we are designing, building and auditing much of the software that will be run by network stakeholders such as infrastructure providers in order to create Aztec.
+- **Open Development:** Aztec is developed as a credibly neutral, decentralized network with contributions from the community and the company. The contributors to Aztec uphold many of the values of the Ethereum community: public development, a rigorous commitment to open source, and the goal of building a permissionless, censorship-resistant system.
+- **Noir:** Introducing Noir as a domain-specific programming language for writing zero-knowledge circuits in Aztec.
 
-Contributors to Aztec uphold many of the values of the Ethereum community -- building in public, a rigorous commitment to open source and a goal to build a permission-less, censorship resistance system.
+### **Cryptography: Honk and the Role of Proof in Aztec**
 
-## Noir
+Introducing Honk, the advanced proving system making Aztec possible, available under the Apache 2.0 License.
 
-Noir is a domain specific programming language for writing zero-knowledge circuits. On Aztec a smart contract is a collection of circuits that developers write using Noir.
+## Join us
 
-You can find more information and resources for learning about Noir smart contracts on [this page](../dev_docs/contracts/main.md).
-
-## Cryptography
-
-To support Aztec's rollup, our cryptography team is building [Honk](https://github.com/AztecProtocol/barretenberg/tree/master/cpp/src/barretenberg/honk), a cutting edge proving system that makes Aztec possible, under the Apache 2.0 License.
-
-## Participate
-
-Keep up with the latest discussion and join the conversation in the [Aztec forum](https://discourse.aztec.network) or [Discord server](https://discord.gg/DgWG2DBMyB).
+Keep up with the latest discussion and join the conversation in the [Aztec forum](https://discourse.aztec.network/) or [Discord server](https://discord.gg/DgWG2DBMyB).
 
 import Disclaimer from "../misc/common/_disclaimer.mdx";
 <Disclaimer />;
